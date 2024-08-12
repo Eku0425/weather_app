@@ -11,16 +11,10 @@ class FavScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // double height = MediaQuery.of(context).size.height;
-    // double width = MediaQuery.of(context).size.width;
+   
     WeatherProvider weatherProviderTrue = Provider.of(context, listen: true);
     WeatherProvider weatherProviderFalse = Provider.of(context, listen: false);
-    // final name =
-    //     weatherProviderTrue.weather[index].split('-').sublist(0, 1).join('-');
-    // final status =
-    //     weatherProviderTrue.weather[index].split('-').sublist(1, 2).join('-');
-    // final temp =
-    //     weatherProviderTrue.weather[index].split('-').sublist(2, 3).join('-');
+  
 
     return SafeArea(
       child: Scaffold(
@@ -113,4 +107,3 @@ class FavScreen extends StatelessWidget {
     );
   }
 }
-// Text('${weatherProviderTrue.Weather[index]}')
